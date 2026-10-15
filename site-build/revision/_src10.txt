@@ -1,0 +1,33 @@
+[p1] Chapter 10: Application Layer :: Chapter 10 Chapter 10: Application Layer
+[p2] OSI and TCP/IP Models Revisited :: Provides the interface between the applications we use to communicate and the underlying network over which our messages are transmitted. Application layer protocols are used to exchange data between programs running on the source and destination hosts.
+[p3] Application Layer :: Most applications, like web browsers (using HTTP) or e-mail clients (using SMTP and PoP), incorporate the functionality of the application, presentation and session layers. DNS HTTP DHCP FTP Transfer SMTP Retrieval IMAP POP
+[p4] Presentation and Session Layers :: Presentation layer Coding and conversion of application layer data Data compression Data encryption for the transmission and decryption of data upon receipt by the destination Session layer Functions, creates, and maintains dialogs between source and destination applications Handles the exchange of information to initiate dialogs, keep them active, and to restart sessions
+[p5] Presentation and Session Layers (cont.) :: Coding Standards Video Graphics
+[p6] Peer-to-Peer Networks :: Both devices are considered equal in the communication. The roles of client and server are set on a per request basis.
+[p7] Peer-to-Peer Applications :: Client and server in the same communication. Both act as client and server at the same time
+[p8] Client-Server Model :: 10.1 Application, Session and Presentation How Application Protocols Interact with End-User Applications Client-Server Model
+[p9] Client-Server Model :: 10.1 Application, Session and Presentation How Application Protocols Interact with End-User Applications Client-Server Model
+[p10] 10.2 Well-Known Application Layer Protocols and Services :: 10.2 Well-Known Application Layer Protocols and Services 10.2 Well-Known Application Layer Protocols and Services
+[p11] Application Layer Protocols Revisited :: Three application layer protocols involved in everyday work or play include: HTTP to browse the web. Simple Mail Transfer Protocol (SMTP) to enable users to send email. Post Office Protocol (POP) to enable users to receive email.
+[p12] Hypertext Transfer Protocol and Hypertext Markup Language :: 1. First, the browser interprets the three parts of the URL: http (the protocol or scheme) www.cisco.com (the server name) index.html (the specific file name requested)
+[p12] Hypertext Transfer Protocol and Hypertext Markup Language :: a numeric address 3. Using the HTTP protocol requirements sends a GET request to the
+[p12] Hypertext Transfer Protocol and Hypertext Markup Language :: 4. Server sends the HTML code for this web page 5. Browser deciphers the HTML code and formats the page 172.15.10.5
+[p13] HTTP and HTTPS :: Developed to publish and retrieve HTML pages Used for data transfer Specifies a request/response protocol Three common message types are GET, POST, and PUT GET is a client request for data POST and PUT are used to send messages that upload data to the web server
+[p14] SMTP, POP, and IMAP (cont.) :: 10.2 Well-Known Application Layer Protocols and Services Common Application Layer Protocols SMTP, POP, and IMAP (cont.)
+[p15] SMTP, POP, and IMAP (cont.) :: transfers mail SMTP processes must be running on both the client and server uses port 25
+[p15] SMTP, POP, and IMAP (cont.) :: enables a workstation to retrieve mail from a mail server mail is downloaded from the server to the client and then deleted on
+[p15] SMTP, POP, and IMAP (cont.) :: uses port 110 POP3 is desirable for an ISP, because it alleviates their responsibility for managing large amounts of storage for their email servers
+[p16] SMTP, POP, and IMAP (cont.) :: MDA Can also solve issues like virus scanning and spam filtering
+[p17] SMTP, POP, and IMAP (cont.) :: Transfers mail reliably and efficiently
+[p17] SMTP, POP, and IMAP (cont.) :: Enables a workstation to retrieve mail from a mail server With POP, mail is downloaded from the server to the client and then deleted on the server
+[p17] SMTP, POP, and IMAP (cont.) :: Another protocol that retrieves email messages Unlike POP, when the user connects to an IMAP-capable server, copies of the messages are downloaded to the client application Original messages are kept on the server until manually deleted
+[p18] Domain Name Service :: An URL name is resolved to its numeric network device address by the DNS protocol.
+[p19] DNS Hierarchy :: Examples top- level domains (TLD): or industry organization
+[p20] nslookup :: Operating system utility called nslookup allows the user to manually query the name servers to resolve a given host name Utility can be used to troubleshoot name resolution issues and to verify the current status of the name servers
+[p21] Dynamic Host Configuration Protocol :: DHCP allows a host to obtain an IP address dynamically. DHCP server is contacted and address requested - chooses address from a configured range of addresses called a pool and “leases” it to the host for a set period. DHCP used for general purpose hosts such as end user
+[p22] Dynamic Host Configuration Protocol (cont.) :: 10.2 Well-Known Application Layer Protocols and Services Providing IP Addressing Services Dynamic Host Configuration Protocol (cont.)
+[p23] DHCP Operation :: 10.2 Well-Known Application Layer Protocols and Services Providing IP Addressing Services DHCP Operation
+[p24] File Transfer Protocol :: FTP allow data transfers between a client and a server. FTP client is an application that runs on a computer that is used
+[p24] File Transfer Protocol :: To successfully transfer data, FTP requires two connections between the client and the server, one for commands and replies, the other for the actual file transfer.
+[p25] Getting the Data through the Internetwork :: code, compress, encrypts segment, port#, seq# source & destination ip address source & destination MAC
+[p26] Summary :: Applications are computer programs with which the user interacts and which initiate the data transfer process at the user’s request. Services are background programs that provide the connection between the application layer and the lower layers of the networking model. Protocols provide a structure of agreed-upon rules and processes that ensure services running on one particular device can send and receive data from a range of different network devices. HTTP supports the delivery of web pages to end devices. SMTP, POP, and IMAP support sending and receiving email.

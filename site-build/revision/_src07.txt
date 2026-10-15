@@ -1,0 +1,31 @@
+[p1] Chapter 7: Transport Layer :: Chapter 7 Chapter 7: Transport Layer
+[p2] Application Presentation Session Transport Network Data Link Physical Bits, Hub/Repeater Frames, Switch/Bridge, MAC Packets, Router/Multilayer Switch, IP Segments, TCP/UDP, Windowing, ACK, Seq#, Ports Flow control Sessions :: 7.1 Transportation of Data Application Presentation Session Transport Network Data Link Physical Bits, Hub/Repeater Frames, Switch/Bridge, MAC Packets, Router/Multilayer Switch, IP Segments, TCP/UDP, Windowing, ACK, Seq#, Ports Flow control Sessions
+[p3] Role of the Transport Layer :: The transport layer is responsible for establishing a temporary communication session between two applications and delivering data between them. TCP/IP uses two protocols to achieve this: Transmission Control Protocol (TCP) User Datagram Protocol (UDP)
+[p3] Role of the Transport Layer :: Tracking the individual communication between applications on the source and destination hosts Segmenting data for manageability and reassembling segmented data into streams of application data at the destination Identifying the proper application for each communication stream
+[p4] Role of the Transport Layer (Cont.) :: 7.1 Transportation of Data Transportation of Data Role of the Transport Layer (Cont.)
+[p5] Conversation Multiplexing :: Enables many different communications, from many different users, to be interleaved (multiplexed) on the same network, at the same time. Provides the means to both send and receive data when running multiple applications. Header added to each segment to identify it.
+[p6] Conversation Multiplexing (Cont.) :: 7.1 Transportation of Data Transportation of Data Conversation Multiplexing (Cont.)
+[p7] Conversation Multiplexing (Cont.) :: 7.1 Transportation of Data Transportation of Data Conversation Multiplexing (Cont.)
+[p8] Transport Layer Reliability :: Different applications have different transport reliability requirements.
+[p8] Transport Layer Reliability :: Provides reliable delivery ensuring that all of the data arrives at the destination. Uses acknowledged delivery and other processes to ensure delivery Makes larger demands on the network – more overhead.
+[p8] Transport Layer Reliability :: Provides just the basic functions for delivery – no reliability. Less overhead.
+[p8] Transport Layer Reliability :: There is a trade-off between the value of reliability and the burden it places on the network. Application developers choose the transport protocol based on the requirements of their applications.
+[p9] Introducing TCP :: Defined in RFC 793 Connection-oriented – Creates a session between the source and destination Reliable delivery – Retransmits lost or corrupt data Ordered data reconstruction – Reconstructs numbering and sequencing of segments Flow control – Regulates the amount of data transmitted Stateful protocol – Tracks the session
+[p10] Introducing UDP :: RFC 768 Connectionless Unreliable delivery No ordered data reconstruction No flow control Stateless protocol Applications that use UDP: Domain Name System (DNS) Video Streaming VoIP
+[p11] Separating Multiple Communications :: TCP and UDP use port numbers to differentiate between applications. .
+[p12] Port Numbers :: H T T P S
+[p13] UDP Low Overhead vs. Reliability :: Simple protocol that provides the basic transport layer function Used by applications that can tolerate small loss of data Used by applications that cannot tolerate delay
+[p13] UDP Low Overhead vs. Reliability :: DNS Simple Network Management Protocol (SNMP) Dynamic Host Configuration Protocol (DHCP) Trivial File Transfer Protocol (TFTP) IP telephony or VoIP Online games
+[p14] TCP and UDP Port Addressing (Cont.) :: Netstat is used to examine TCP connections that are open and running on a networked host.
+[p15] TCP and UDP Segmentation :: The transport layer divides the data into pieces and adds a header for delivery over the network
+[p16] 7.2 TCP and UDP :: 7.2 TCP and UDP 7.2 TCP and UDP
+[p17] TCP Connection, Establishment and Termination :: Establishes that the destination device is present on the network Verifies that the destination device has an active service and is accepting requests on the destination port number that the initiating client intends to use for the session Informs the destination device that the source client intends to establish a communication session on that port number
+[p18] Starting a TCP Session :: 7.2 TCP and UDP Three-way Handshake Starting a TCP Session
+[p19] TCP Three-Way Handshake – Step 1 :: communication session with the server
+[p20] TCP Three-Way Handshake – Step 2 :: session and requests a server-to-client communication session.
+[p21] TCP Three-Way Handshake – Step 3 :: 7.2 TCP and UDP TCP Communication TCP Three-Way Handshake – Step 3
+[p22] TCP Session Termination :: 7.2 TCP and UDP TCP Communication TCP Session Termination
+[p23] TCP Reliability – Ordered Delivery :: Sequence numbers are used to reassemble segments into their original order.
+[p24] Acknowledgement and Window Size :: The sequence number and acknowledgement number are used together to confirm receipt. The window size is the amount of data that a source can transmit before an acknowledgement must be received.
+[p25] Datagram Reassembly :: 7.2 TCP and UDP UDP Communication Datagram Reassembly
+[p26] Chapter 7: Summary :: In this chapter, you learned: The role of the transport layer is to provide three main services: multiplexing, segmentation and reassembly, and error checking. It does this by: Dividing data received from an application into segments. Adding a header to identify and manage each segment. Using the header information to reassemble the segments back into application data. Passing the assembled data to the correct application. How TCP and UDP operate and which popular applications use each protocol. Transport Layer functions are necessary to address issues in QoS and security in networks. Ports provide a “tunnel” for data to get from the transport layer to the appropriate application at the destination.

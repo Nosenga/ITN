@@ -1,0 +1,38 @@
+[p1] Chapter 3: Network Protocols and Communications :: Chapter 3 Chapter 3: Network Protocols and Communications
+[p2] Chapter 3 :: 3.1 Rules of Communication 3.2 Network Protocols and Standards 3.3 Moving Data in the Network 3.4 Summary
+[p3] 3.1 Rules of Communication :: 3.1 Rules of Communication 3.1 Rules of Communication
+[p4] What is Communication? :: 3.1 Rules of Communication The Rules What is Communication?
+[p5] Establishing the Rules :: An identified sender and receiver Agreed upon method of communicating (face-to-face, telephone, letter, photograph) Common language and grammar Speed and timing of delivery Confirmation or acknowledgment requirements
+[p6] Message Encoding :: 3.1 Rules of Communication The Rules Message Encoding
+[p7] Message Formatting and Encapsulation :: Example: Personal letter contains the following elements: Identifier of the recipient’s location (network) Identifier of the sender’s location (network) Salutation or greeting Recipient identifier (IP) The message content Source identifier (IP) End of message indicator
+[p8] Message Size :: An overview of the segmenting process: The size restrictions of frames require the source host to break a long message into individual pieces (or segments) that meet both the minimum and maximum size requirements. Each segment is encapsulated in a separate frame with the address information, and is sent over the network. At the receiving host, the messages are de-encapsulated and put back together to be processed and interpreted.
+[p9] Message Timing :: Access Method (collisions can occur if everyone wants to talk at the same time) Flow Control (amount of data – windowing) Response Timeout (rules that specify how long to wait for responses and what action to take if a response timeout occurs)
+[p10] Message Delivery Options :: 3.1 Rules of Communication The Rules Message Delivery Options
+[p11] 3.2 Network Protocols and Standards :: 3.2 Network Protocols and Standards 3.2 Network Protocols and Standards
+[p12] Rules that Govern Communications :: 3.2 Network Protocols and Standards Protocols Rules that Govern Communications
+[p13] Network Protocols :: A stack/suite of network protocols (examples of protocols are IP, HTTP, DHCP) describe: 1. How a message is formatted or structured 2. The process by which networking devices share information about pathways with other networks
+[p14] Network Protocols :: 3. How and when error and system messages are passed between devices 4.The setup and termination of data transfer sessions
+[p15] Interaction of Protocols :: Application Protocol: governs the way a web client and web server interacts Transport Protocol: divides HTTP segment into smaller pieces/segments Internet Protocol: encapsulate segments into packets with IP addresses Network Access Protocol: Format packets to be transmitted over media
+[p16] IEEE :: The IEEE 802 family of standards deals with LANs and MANs Consist of 38 societies Published 130 journals Sponsor 1,300 conferences each year Has 1,300 standards and projects Has 400,000 members In 160 countries IEEE 802.3 IEEE 802.11
+[p17] ISO :: OSI Model ISO is best known for its OSI (Open System Interconnection) Model The OSI protocol suite was implemented on telecommunications equipment The TCP/IP protocol suite was implemented for use on the Internet
+[p18] Benefits of Using a Layered Model :: 3.2 Network Protocols and Standards Reference Models Benefits of Using a Layered Model
+[p19] Other Standards Organization :: The Electronic Industries Alliance (EIA) - electrical wiring and The Telecommunications Industry Association (TIA) – develop The International Telecommunications Union – Telecommunications
+[p19] Other Standards Organization :: The Internet Corporation for Assigned Names and Numbers (ICANN) -
+[p20] The OSI Reference Model :: The primary purpose of a reference model is to get clearer understanding of the functions and processes involved.
+[p21] The TCP/IP Reference Model :: describes the functions that occur at each layer of protocols within the TCP/IP suite
+[p22] Comparing the OSI and TCP/IP Models :: 3.2 Network Protocols and Standards Reference Models Comparing the OSI and TCP/IP Models
+[p23] Comparing the OSI and TCP/IP Models :: There are benefits to using a layered model to describe network protocols and operations. Using a layered model: Assists in protocol design, because protocols that operate at a specific layer have defined information that they act upon and a defined interface to the layers above and below. Fosters competition because products from different
+[p23] Comparing the OSI and TCP/IP Models :: Prevents technology or capability changes in one layer from
+[p23] Comparing the OSI and TCP/IP Models :: Provides a common language to describe networking functions and capabilities.
+[p24] 3.3 Moving Data in the Network :: 3.3 Moving Data in the Network 3.3 Moving Data in the Network
+[p25] Communicating the Messages :: Benefits of Message Segmentation Segmenting message disadvantage
+[p26] Protocol Data Units (PDUs) :: PDUs at different levels are called: Bits Frames Packet Segment Data Data Data
+[p27] Protocol De-encapsulation :: 3.3.1.2
+[p28] Accessing Local Resources :: 3.3 Moving Data in the Network Moving Data in the Network Accessing Local Resources
+[p29] Communicating with Device / Same Network :: 3.3 Moving Data in the Network Accessing Local Resources Communicating with Device / Same Network
+[p30] MAC and IP Addresses :: IPv4 Address: 32 bit address – 192.168.10.2 (11000000.10101000.00001010.00000010) IPv6 Address: 128 bit address (0000000000000000.0000000000000000…) 8x MAC address/Burned-in Address (BID): 48-bit addresses (1254.BC32.334B.CCB2.EEF2.FFD3)
+[p31] MAC and IP Addresses :: PC1 192.168.1.110 AA-AA-AA-AA-AA-AA PC2 192.168.1.111 BB-BB-BB-BB-BB-BB FTP Server 192.168.1.9 CC-CC-CC-CC-CC-CC R1 192.168.1.1 11-11-11-11-11-11 ARP Request S1 R1
+[p32] Communicating Device / Remote Network :: 3.3 Moving Data in the Network Accessing Remote Resources Communicating Device / Remote Network
+[p33] Summary :: In this chapter, you learned: Data networks are systems of end devices, intermediary devices, and the media connecting the devices. For communication to occur, these devices must know how to communicate. These devices must comply with communication rules and protocols. TCP/IP is an example of a protocol suite. Most protocols are created by a standards organization such as the IETF or IEEE. The most widely-used networking models are the OSI and TCP/IP models. Data that passes down the stack of the OSI model is segmented into pieces and encapsulated with addresses and other labels. The process is reversed as the pieces are de-encapsulated and passed up the destination protocol stack.
+[p34] Summary (cont.) :: In this chapter, you learned: The OSI model describes the processes of encoding, formatting, segmenting, and encapsulating data for transmission over the network. The TCP/IP protocol suite is an open standard protocol that has been endorsed by the networking industry and ratified, or approved, by a standards organization. The Internet Protocol Suite is a suite of protocols required for transmitting and receiving information using the Internet. Protocol Data Units (PDUs) are named according to the protocols of the TCP/IP suite: data, segment, packet, frame, and bits. Applying models allows individuals, companies, and trade associations to analyze current networks and plan the networks of the future.
+[p35] Homework :: Activity 3.2.2.5 Activity 3.2.4.5 Lab 3.2.4.6 (building packets) Activity 3.3.1.5 Activity 3.4.1.2 (wireshark)

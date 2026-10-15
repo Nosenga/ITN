@@ -1,0 +1,50 @@
+[p1] Chapter 4: Network Access :: Chapter 4 Chapter 4: Network Access
+[p2] Chapter 4 :: 4.1 Physical Layer Protocols 4.2 Network Media 4.3 Data Link Layer Protocols 4.4 Media Access Control 4.5 Summary
+[p3] 4.1 Physical Layer Protocols :: 4.1 Physical Layer Protocols 4.1 Physical Layer Protocols
+[p4] The Physical Layer :: 4.1 Physical Layer Protocols Purpose of the Physical Layer The Physical Layer
+[p5] Physical Layer Media :: 4.1 Physical Layer Protocols Purpose of the Physical Layer Physical Layer Media
+[p6] Physical Layer Standards :: ISO 8877: Officially adopted the RJ connectors (e.g., RJ-11, RJ-45) ISO 11801: Network cabling standard similar to EIA/TIA 568.
+[p6] Physical Layer Standards :: TIA-568-C: Telecommunications cabling standards, used by nearly all voice, video and data networks. TIA-569-B: Commercial Building Standards for Telecommunications Pathways and Spaces TIA-598-C: Fiber optic color coding TIA-942: Telecommunications Infrastructure Standard for Data Centers
+[p6] Physical Layer Standards :: 568-C: RJ-45 pinouts. Co-developed with EIA/TIA G.992: ADSL
+[p6] Physical Layer Standards :: 802.3: Ethernet 802.11: Wireless LAN (WLAN) & Mesh (Wi-Fi certification) 802.15: Bluetooth
+[p7] Bandwidth :: 4.1 Physical Layer Protocols Fundamental Principles of Layer 1 Bandwidth
+[p8] Throughput :: Throughput = the number of bits transferred across the media over a given period of time. Factors that can influence this transfer includes: The amount of traffic Type of traffic Latency/delays created by the number of network devices between source and destination
+[p9] Types of Physical Media :: Gigabit Ethernet Interfaces SHDSL (high speed WAN Interface card Management Ports FastEthernet Switch Ports USB Mini-B Connector USB Type A Connector
+[p10] 4.2 Network Media (cabling) :: 4.2 Network Media 4.2 Network Media (cabling)
+[p11] Characteristics of Copper Media :: 4.2 Network Media Copper Cabling Characteristics of Copper Media
+[p12] Copper Media :: Shielded Twisted Pair (STP) Cable Unshielded Twisted Pair (UTP) Cable Coaxial Cable
+[p13] UTP Cable :: 4.2 Network Media Copper Cabling UTP Cable
+[p14] STP Cable :: Foil Shields Braided or Foil Shield
+[p15] Coaxial Cable :: 4.2 Network Media Copper Cabling Coaxial Cable
+[p16] Properties of UTP Cabling :: UTP cable does not use shielding to counter the effects of EMI (electric magnetic interference) and RFI (radio frequency interference). Instead, cable designers have discovered that they can limit the negative effect of crosstalk by: Cancellation: when two wires in an electrical circuit are placed
+[p16] Properties of UTP Cabling :: each other. Therefore, the two magnetic fields cancel each other out and also cancel out any outside EMI and RFI signals. Varying the number of twists per wire pair: UTP cable must follow precise specifications governing how many twists or braids are permitted per meter (3.28 feet) of cable. The orange/orange white pairs are twisted less than the blue/white blue pair.
+[p17] UTP Connectors :: Each time copper cabling is terminated there is the possibility of signal loss and the introduction of noise to the communication circuit.
+[p18] Types of UTP Cable :: 4.2 Network Media UTP Cabling Types of UTP Cable
+[p19] Testing UTP Cables :: After installation, a UTP cable tester should be used to test for the following parameters: Wire map (proper pin termination at each end, shorts etc) Cable length Signal loss due to attenuation (loss of signal strength) Crosstalk
+[p20] Properties of Fiber Optic Cabling :: Fiber-optic cabling is now being used in four types of industry: Enterprise Networks (backbone) Fiber-to-the-home (FTTH) and Access Networks (always-on broadband services) Long-Haul Networks (ISP use it to connect to countries) Submarine Networks (harsh under sea environments)
+[p21] Fiber Media Cable Design :: 4.2 Network Media Fiber Optic Cabling Fiber Media Cable Design
+[p22] Types of Fiber Media :: 4.2 Network Media Fiber Optic Cabling Types of Fiber Media
+[p23] Network Fiber Connectors :: 4.2 Network Media Fiber Optic Cabling Network Fiber Connectors
+[p24] Fiber versus Copper :: Bandwidth Supported 10 Mbps – 10 Gbps 10 Mbps – 100 Gbps Distance Relatively short (1 – 100 meters) Relatively High (1 – 100,000 meters) Immunity To EMI And RFI Low High (Completely immune) Immunity To Electrical Hazards Low High (Completely immune) Media And Connector Costs Lowest Highest Installation Skills Required Lowest Highest Safety Precautions Lowest Highest
+[p25] Properties of Wireless Media :: Wireless does have some areas of concern including: Coverage area Interference Security
+[p26] Types of Wireless Media :: IEEE 802.11 standards Commonly referred to as Wi-Fi. Uses CSMA/CA Variations include: 802.11a: 54 Mbps, 5 GHz - business 802.11b: 11 Mbps, 2.4 GHz - home 802.11g: 54 Mbps, 2.4 GHz – compatible with b 802.11n: 600 Mbps, 2.4 and 5 GHz 802.11ac: 1 Gbps, 5 GHz 802.11ad: 7 Gbps, 2.4 GHz, 5 GHz, and 60 GHz IEEE 802.15 standard Supports speeds up to 3 Mb/s Provides device pairing over distances from 1 to 100 meters. IEEE 802.16 standard Provides speeds up to 1 Gbps Uses a point-to-multipoint topology to provide wireless broadband access.
+[p27] 4.3 Data Link Layer Protocols :: 4.3 Data Link Layer Protocols 4.3 Data Link Layer Protocols
+[p28] The Data Link Layer :: 4.3 Data Link Layer Protocols Purpose of the Data Link Layer The Data Link Layer
+[p29] Data Link Sublayers :: Network Data Link LLC Sublayer MAC Sublayer Physical 802.3 Ethernet 802.11 Wi-Fi 802.15 Bluetooth Makes it possible for several protocols to coexist and to be transported over the same network
+[p30] Media Access Control :: 4.3 Data Link Layer Protocols Purpose of the Data Link Layer Media Access Control
+[p31] Providing Access to Media :: 4.3 Data Link Layer Protocols Purpose of the Data Link Layer Providing Access to Media
+[p32] Media Access Control :: Media Access Control method depends on: Topology Media sharing
+[p33] Physical and Logical Topologies :: 4.3 Data Link Layer Protocols Topologies Physical and Logical Topologies
+[p34] Common Physical WAN Topologies :: 4.3 Data Link Layer Protocols WAN Topologies Common Physical WAN Topologies
+[p35] Physical Point-to-Point Topology :: The router is the only one to use this media
+[p36] Logical Point-to-Point Topology :: 4.3 Data Link Layer Protocols WAN Topologies Logical Point-to-Point Topology
+[p37] Half- and Full-Duplex :: Half-Duplex Full-Duplex
+[p38] Physical LAN Topologies :: 4.3 Data Link Layer Protocols LAN Topologies Physical LAN Topologies
+[p39] Logical Topology for Shared Media :: 4.3 Data Link Layer Protocols LAN Topologies Logical Topology for Shared Media
+[p40] Controlled Access :: Only one station can transmit at a time Devices wanting to transmit must wait their turn No collisions May use a token passing method Token Ring (IEEE 802.5) FDDI
+[p41] Contention-Based Access :: Stations can transmit at any time Collision exist There are mechanisms to resolve contention for the media CSMA/CD for 802.3 Ethernet networks CSMA/CA for 802.11 wireless networks
+[p42] Multi-Access Topology :: 4.3 Data Link Layer Protocols LAN Topologies Multi-Access Topology
+[p43] Ring Topology :: 4.3 Data Link Layer Protocols LAN Topologies Ring Topology
+[p44] The Frame :: 4.3 Data Link Layer Protocols Data Link Frame The Frame
+[p45] Layer 2 Address :: 4.3 Data Link Layer Protocols Data Link Frame Layer 2 Address
+[p46] Summary :: The TCP/IP network access layer is the equivalent of the OSI data link layer (Layer 2) and the physical layer (Layer 1). The OSI physical layer provides the means to transport the bits that make up a data link layer frame across the network media. The physical layer standards address three functional areas: physical components, frame encoding technique, and signaling method. Using the proper media is an important part of network communications. Without the proper physical connection, either wired or wireless, communications between any two devices will not occur. Wired communication consists of copper media and fiber cable. There are three main types of copper media used in networking: unshielded-twisted pair (UTP), shielded-twisted pair (STP), and coaxial cable. UTP cabling is the most common copper networking media.

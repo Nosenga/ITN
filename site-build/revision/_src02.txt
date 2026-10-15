@@ -1,0 +1,54 @@
+[p1] Chapter 2: Configuring a Network Operating System :: Chapter 2 Chapter 2: Configuring a Network Operating System
+[p2] Chapter 2 :: 2.0 Introduction 2.1 IOS Bootcamp 2.2 Getting Basic 2.3 Addressing Schemes 2.4 Summary
+[p3] 2.1 IOS Bootcamp :: 2.1 IOS Bootcamp 2.1 IOS Bootcamp
+[p4] Operating Systems :: All networking equipment dependent on operating systems The operating system on home routers is usually called firmware Cisco IOS – Collection of network operating systems used on Cisco devices
+[p5] Operating Systems (cont.) :: 2.1 IOS Bootcamp Cisco IOS Operating Systems (cont.)
+[p6] Purpose of OS :: PC operating systems (Windows 8 and OS X) perform technical functions that enable: Use of a mouse View output Enter text Switch or router IOS provides options to: Configure interfaces Enable routing and switching functions All networking devices come with a default IOS Possible to upgrade the IOS version or feature set In this course, primary focus is Cisco IOS Release 15.x
+[p7] Location of the Cisco IOS :: Non-volatile storage, not lost when power is lost Can be changed or overwritten as needed Can be used to store multiple versions of IOS IOS copied from flash to volatile RAM Quantity of flash and RAM memory determines IOS that can be used
+[p8] IOS Functions :: These are the major functions performed or enabled by Cisco routers and switches.
+[p9] Console Access Method :: Most common methods to access the CLI: Console Telnet or SSH AUX port
+[p10] Console Access Method :: Device is accessible even if no networking services have been configured (out-of-band) Need a special console cable Allows configuration commands to be entered Should be configured with passwords to prevent unauthorized access Device should be located in a secure room so console port cannot be easily accessed
+[p11] Telnet, SSH, and AUX Access Methods :: Method for remotely accessing the CLI over a network Require active networking services and one active interface that is configured
+[p11] Telnet, SSH, and AUX Access Methods :: Remote login similar to Telnet, but utilizes more security Stronger password authentication Uses encryption when transporting data
+[p11] Telnet, SSH, and AUX Access Methods :: Out-of-band connection Uses telephone line Can be used like console port
+[p12] Terminal Emulation Programs :: Software available for connecting to a networking device: PuTTY Tera Term SecureCRT HyperTerminal OS X Terminal
+[p13] Cisco IOS Modes of Operation :: 2.1 IOS Bootcamp Navigating the IOS Cisco IOS Modes of Operation
+[p14] Primary Modes :: 2.1 IOS Bootcamp Navigating the IOS Primary Modes
+[p15] Global Configuration Mode and Submodes :: 2.1 IOS Bootcamp Navigating the IOS Global Configuration Mode and Submodes
+[p16] Navigating Between IOS Modes :: 2.1 IOS Bootcamp Navigating the IOS Navigating Between IOS Modes
+[p17] Navigating Between IOS Modes (cont.) :: 2.1 IOS Bootcamp Navigating the IOS Navigating Between IOS Modes (cont.)
+[p18] IOS Command Structure :: 2.1 IOS Bootcamp The Command Structure IOS Command Structure
+[p19] Context-Sensitive Help :: 2.1 IOS Bootcamp The Command Structure Context-Sensitive Help
+[p20] Command Syntax Check :: 2.1 IOS Bootcamp The Command Structure Command Syntax Check
+[p21] Hot Keys and Shortcuts :: Tab – Completes the remainder of a partially typed command or keyword. Ctrl-R – Redisplays a line. Ctrl-A – Moves to the beginning of the line. Ctrl-Z – Exits the configuration mode and returns to user EXEC. Down Arrow – Allows the user to scroll forward through former commands. Up Arrow – Allows the user to scroll backward through former commands. Ctrl-shift-6 – Allows the user to interrupt an IOS process such
+[p21] Hot Keys and Shortcuts :: Ctrl-C – Exits the current configuration or aborts the current command.
+[p22] The show version Command :: 2.1 IOS Bootcamp The Command Structure The show version Command
+[p23] 2.2 Getting Basic :: 2.2 Getting Basic 2.2 Getting Basic
+[p24] Device Names :: Some guidelines for naming conventions: Start with a letter Contains no spaces Ends with a letter or digit Uses only letters, digits, and dashes Be less than 64 characters in length Without names, network devices are difficult to identify for configuration purposes.
+[p25] Configuring Hostnames :: 2.2 Getting Basic Hostnames Configuring Hostnames
+[p26] Securing Device Access :: These are device access passwords: mode connection
+[p27] Securing Privileged EXEC Access Mode :: Use the enable secret command, not the older enable password command. The enable secret command provides greater security because
+[p27] Securing Privileged EXEC Access Mode :: the password is encrypted.
+[p28] Securing User EXEC Access :: Console port must be secured; it reduces the chance of unauthorized personnel physically plugging a cable into the device and gaining device access. VTY lines allow access to a Cisco device via Telnet. The number of VTY lines supported varies with the type of device and the IOS version.
+[p29] Encrypting Password Display :: Prevents passwords from showing up as plain text when viewing the configuration Keeps unauthorized individuals from viewing passwords in the configuration file Once applied, removing the encryption service does not reverse the encryption
+[p30] Banner Messages :: Important part of the legal process in the event that someone is prosecuted for breaking into a device Wording that implies that a login is "welcome" or "invited" is not appropriate Often used for legal notification because it is displayed to all connected terminals
+[p31] Configuration Files :: Switch# reload System configuration has been modified. Save? [yes/no]: n Proceed with reload? [confirm]
+[p31] Configuration Files :: Startup configuration is removed by using
+[p31] Configuration Files :: the erase startup- config Switch# erase startup- config
+[p31] Configuration Files :: On a switch, you must also
+[p31] Configuration Files :: issue the delete vlan.dat Switch# delete vlan.dat Delete filename [vlan.dat]? Delete flash:vlan.dat? [confirm]
+[p32] 2.3 Addressing Schemes :: 2.3 Addressing Schemes 2.3 Addressing Schemes
+[p33] IP Addressing of Devices :: Each end device on a network must be configured with an IP address. Structure of an IPv4 address is called dotted decimal. IP address displayed in decimal notation, with four decimal numbers between 0 and 255. With the IP address, a subnet mask is also necessary. IP addresses can be assigned to both physical ports and virtual interfaces.
+[p34] Configuring a Switch Virtual Interface :: IP address – Together with subnet mask, uniquely identifies end device on internetwork. Subnet mask – Determines which part of a larger network is used by an IP address.
+[p34] Configuring a Switch Virtual Interface :: interface VLAN 1 – Available in interface configuration mode, ip address 192.168.10.2 255.255.255.0 – Configures the
+[p34] Configuring a Switch Virtual Interface :: IP address and subnet mask for the switch. no shutdown – Administratively enables the interface. Switch still needs to have physical ports configured and VTY lines to enable remote management.
+[p35] Configuring a Switch Virtual Interface :: 2.3 Addressing Schemes Addressing Devices Configuring a Switch Virtual Interface
+[p36] Automatic IP Address Configuration for End Devices :: 2.3 Addressing Schemes Addressing Devices Automatic IP Address Configuration for End Devices
+[p37] IP Address Conflicts :: 2.3 Addressing Schemes Addressing Devices IP Address Conflicts
+[p38] Testing the Interface Assignment :: 2.3 Addressing Schemes Verifying Connectivity Testing the Interface Assignment
+[p39] Testing End-to-End Connectivity :: 2.3 Addressing Schemes Verifying Connectivity Testing End-to-End Connectivity
+[p40] Chapter 2 Summary :: Cisco IOS: The technician can enter commands to configure, or program, the device to perform various networking functions. Services are generally accessed using a command-line interface (CLI), which is accessed by either the console port, the AUX port, or through telnet or SSH. Once connected to the CLI, network technicians can make configuration changes to Cisco IOS devices. Cisco IOS is designed as a modal operating system, which means a network technician must navigate through various hierarchical modes of the IOS. Cisco IOS routers and switches support a similar modal operating system, support similar command structures, and support many of the same commands. In addition, both devices have identical initial
+[p40] Chapter 2 Summary :: configuration steps when implementing them in a network.
+[p41] Chapter 2 Summary (cont.) :: Chapter 2 Summary Configuring a Network Operating System Chapter 2 Summary (cont.)
+[p42] Chapter 2 Summary (cont.) :: Chapter 2 Summary Configuring a Network Operating System Chapter 2 Summary (cont.)
+[p43] Homework :: Lab 2.1.4.6 Lab 2.2.2.5 Lab 2.3.2.4 Lab 2.3.2.5 Lab 2.4.1.1 (on board: commands and group them) Lab 2.4.1.2

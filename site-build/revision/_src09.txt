@@ -1,0 +1,17 @@
+[p1] Chapter 9: Subnetting IP Networks :: Chapter 9 Chapter 9: Subnetting IP Networks
+[p2] Chapter 9 :: 9.0 Introduction 9.1 Subnetting an IPv4 Network 9.2 Addressing Schemes 9.3 Design Considerations for IPv6 9.4 Summary
+[p3] 9.1 Subnetting an IPv4 Network :: 9.1 Subnetting an IPv4 Network 9.1 Subnetting an IPv4 Network
+[p4] Reasons for Subnetting :: smaller network spaces called subnetworks or subnets. Large networks must be segmented into smaller subnetworks, creating smaller groups of devices and services to: Control traffic by containing broadcast traffic within each subnetwork. Reduce overall network traffic and improve network performance.
+[p4] Reasons for Subnetting :: A router is necessary for devices on different networks and subnets to communicate. Each router interface must have an IPv4 host address that belongs to the network or subnet that the router interface is connected. Devices on a network and subnet use the router interface attached to their LAN as their default gateway.
+[p5] The Plan :: 9.1 Subnetting an IPv4 Network IP Subnetting is FUNdamental The Plan
+[p6] Subnetting Based on Host Requirements :: Number of subnets required Number of host addresses required
+[p6] Subnetting Based on Host Requirements :: 2^n (where n is the number of remaining host bits) is used to calculate the number of hosts. -2 (The subnetwork ID and broadcast address cannot be used on each subnet.)
+[p7] Subnetting To Meet Network Requirements :: Balance the required number of subnets and hosts for the largest subnet. Design the addressing scheme to accommodate the maximum number of hosts for each subnet. Allow for growth in each subnet.
+[p8] Traditional Subnetting Wastes Addresses :: Traditional subnetting – Uses the same number of addresses is allocated for each subnet. Subnets that require fewer addresses have unused (wasted) addresses; for example, WAN links only need two addresses.
+[p9] Variable Length Subnet Masks (VLSM) :: The variable-length subnet mask (VLSM) or subnetting a subnet provides more efficient use of addresses. VLSM allows a network space to be divided in unequal parts. Subnet mask varies, depending on how many bits have been borrowed for a particular subnet. Network is first subnetted, and then the subnets are resubnetted.
+[p10] VLSM in Practice :: Using VLSM subnets, the LAN and WAN segments in example below can be addressed with minimum waste. Each LANs will be assigned a subnet with /27 mask. Each WAN link will be assigned a subnet with /30 mask.
+[p11] 9.2 Addressing Schemes :: 9.2 Addressing Schemes 9.2 Addressing Schemes
+[p12] Planning to Address the Network :: Allocation of network addresses should be planned and documented for the purposes of: Preventing duplication of addresses Providing and controlling access Monitoring security and performance Client addresses – Usually dynamically assigned using the Dynamic Host Configuration Protocol (DHCP). Sample Network Addressing Plan
+[p13] 9.3 Design Considerations for IPv6 :: 9.3 Design Considerations for IPv6 9.3 Design Considerations for IPv6
+[p14] 9.3 Summary :: Chapter 9 Summary 9.3 Summary
+[p15] Slide 15 :: Chapter 9 Summary Slide 15
