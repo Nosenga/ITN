@@ -1,0 +1,6 @@
+# The site is pre-built and committed in this directory (generated locally by
+# ../site-build/build.py from the course PDFs), so Netlify only needs to
+# publish it as-is.
+[build]
+  publish = "."
+  command = "echo 'Serving pre-built static site'"
